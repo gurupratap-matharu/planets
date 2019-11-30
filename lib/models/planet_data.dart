@@ -1,4 +1,4 @@
-import 'package:planets/data/planet_class.dart';
+import 'package:planets/models/planet.dart';
 
 List<Planet> planets = [
   Planet(
@@ -8,7 +8,7 @@ List<Planet> planets = [
     distance: "227.9m Km",
     gravity: "3.711 m/s ",
     description: "Lorem ipsum...",
-    image: "assets/img/mars.png",
+    image: "assets/images/mars.png",
   ),
   Planet(
     id: "2",
@@ -17,7 +17,7 @@ List<Planet> planets = [
     distance: "54.6m Km",
     gravity: "11.15 m/s ",
     description: "Lorem ipsum...",
-    image: "assets/img/neptune.png",
+    image: "assets/images/neptune.png",
   ),
   Planet(
     id: "3",
@@ -26,7 +26,7 @@ List<Planet> planets = [
     distance: "54.6m Km",
     gravity: "1.622 m/s ",
     description: "Lorem ipsum...",
-    image: "assets/img/moon.png",
+    image: "assets/images/moon.png",
   ),
   Planet(
     id: "4",
@@ -35,7 +35,7 @@ List<Planet> planets = [
     distance: "54.6m Km",
     gravity: "9.807 m/s ",
     description: "Lorem ipsum...",
-    image: "assets/img/earth.png",
+    image: "assets/images/earth.png",
   ),
   Planet(
     id: "5",
@@ -44,6 +44,6 @@ List<Planet> planets = [
     distance: "54.6m Km",
     gravity: "3.7 m/s ",
     description: "Lorem ipsum...",
-    image: "assets/img/mercury.png",
+    image: "assets/images/mercury.png",
   ),
 ];
