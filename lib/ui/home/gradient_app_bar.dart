@@ -8,13 +8,34 @@ class GradientAppBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      height: barHeight,
-      decoration: BoxDecoration(
-        color: Colors.blue,
-      ),
-      child: Center(
-        child: Text(title),
+    final double statusBarHeight = MediaQuery.of(context).padding.top;
+    return SafeArea(
+      child: Container(
+        height: statusBarHeight + barHeight,
+        decoration: BoxDecoration(
+          gradient: LinearGradient(
+            colors: [
+              Color(0xFF3366FF),
+              Color(0xFF00CCFF),
+            ],
+            begin: FractionalOffset(0.25, 1.0),
+            end: FractionalOffset(0.75, 0.5),
+            stops: [0.0, 1.0],
+            tileMode: TileMode.clamp,
+          ),
+          color: Colors.blue,
+        ),
+        child: Center(
+          child: Text(
+            title,
+            style: TextStyle(
+              color: Colors.white,
+              fontFamily: 'Poppins',
+              fontWeight: FontWeight.w600,
+              fontSize: 36.0,
+            ),
+          ),
+        ),
       ),
     );
   }
