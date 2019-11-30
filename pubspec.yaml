@@ -20,7 +20,7 @@ flutter:
 
   uses-material-design: true
   assets:
-    - assets/images/mars.png
+    - assets/images/
 
   fonts:
     - family: Poppins
