@@ -19,4 +19,5 @@ final kRegularTextStyle = kBaseTextStyle.copyWith(
 
 final kSubHeaderTextStyle = kBaseTextStyle.copyWith(
   fontSize: 12.0,
+  color: Color(0xFFB6B2DF),
 );
